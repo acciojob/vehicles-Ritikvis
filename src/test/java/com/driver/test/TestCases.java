@@ -1,5 +1,7 @@
 package com.driver.test;
 
-public class TestCases {
+import com.driver.Boat;
 
+public class TestCases {
+    // Test cases
 }
