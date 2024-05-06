@@ -1,21 +1,22 @@
 package com.driver;
 
-public class Boat {
-    private String name;
-    private int capacity;
+public class Boat implements WaterVehicle{
 
-    // Constructor with arguments
-    public Boat(String name, int capacity) {
-        this.name = name;
-        this.capacity = capacity;
+    public String name;
+    public int capacity;
+
+    public Boat(String name,int capacity){
+        this.name=name;
+        this.capacity=capacity;
     }
 
-    // Getter methods for name and capacity
-    public String getName() {
+    @Override
+    public String getVehicleName() {
         return name;
     }
 
-    public int getCapacity() {
+    @Override
+    public int getVehicleCapacity() {
         return capacity;
     }
 }
